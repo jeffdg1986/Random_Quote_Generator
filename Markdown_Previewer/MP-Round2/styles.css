@@ -1,0 +1,64 @@
+
+body{
+  background-color:gray;
+}
+h1{
+  text-align: center;
+}
+#editor-header{
+  border: 3px solid black;
+  width: 100%;
+  background-color: rgba(0,70,200,0.6);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+#editor{
+  border-bottom: 3px solid black;
+  height: 240px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: rgba(0,70,200,0.2);
+  padding: 10px;
+}
+
+#preview-header{
+  border: 3px solid black;
+  width: 100%;
+  background-color: rgba(0,200,70,.6);
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+#preview{
+  border: 3px solid black;
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0,200,70,.2);
+  padding: 10px;
+  overflow: auto;
+}
+textarea{
+  border: 3px solid black;
+  outline: none;
+}
+blockquote{
+  background-color: white;
+  font-weight: bolder;
+}
+pre{
+  background-color: rgba(0,0,200,0.1);
+}
+img#image{
+  width: 5%;
+  height: 5%;
+}
+span{
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+}

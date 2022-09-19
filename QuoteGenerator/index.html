@@ -95,14 +95,15 @@
     </div>
   </div>
   <script>
-document.getElementById("new-quote").addEventListener("click", something);
-function something (){
-  let a = (Math.floor((Math.random() *102) + 1));
-
-  document.getElementById('text').innerHTML = (quoteArray[a]["quote"]);
-  document.getElementById('author').innerHTML = (quoteArray[a]["author"]);
-
+function QuoteGenerator (){
+  let a = (Math.floor((Math.random() *quoteArray.length) + 1));
+  let quoteText = (quoteArray[a]["quote"]);
+  let quoteAuthor = (quoteArray[a]["author"]);
+  document.getElementById('text').innerHTML = quoteText;
+  document.getElementById('author').innerHTML = quoteAuthor;
 };
+document.getElementById("new-quote").addEventListener("click", QuoteGenerator);
+// Want to add in a function that breaks the share hrefs for twitter and facebook such that the quote and author text is copied to the link
 
 const quoteArray = [{"quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"},
 {"quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill"},
